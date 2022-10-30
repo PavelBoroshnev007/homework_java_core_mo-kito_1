@@ -1,14 +1,12 @@
+package ru.netology.sender;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import ru.netology.entity.Country;
 import ru.netology.entity.Location;
 import ru.netology.geo.GeoService;
-import ru.netology.geo.GeoServiceImpl;
 import ru.netology.i18n.LocalizationService;
-import ru.netology.i18n.LocalizationServiceImpl;
-import ru.netology.sender.MessageSender;
-import ru.netology.sender.MessageSenderImpl;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,8 +14,7 @@ import java.util.Map;
 import static ru.netology.geo.GeoServiceImpl.MOSCOW_IP;
 import static ru.netology.geo.GeoServiceImpl.NEW_YORK_IP;
 
-public class MessageSenderTests {
-
+public class MessageSenderImplTests {
     private static final String MESSAGE_RUSSIA = "Добро пожаловать";
     private static final String MESSAGE_USA = "Welcome";
 
